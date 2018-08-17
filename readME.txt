@@ -1,6 +1,6 @@
 This is an algorithm that implements kNN(it was supposed to implement naive bayes too but i was lazy).
 
-It learns from the learning file and tries to predict weather each patient of the testing file has diabetes.
+It learns from the learning file and tries to predict wether each patient of the testing file has diabetes.
 The output will contain a one line prediction for each line of the testing file.
 
 ----------------------------------------------------------------------------------------------------
@@ -9,11 +9,15 @@ Compile the program (javac MyClassifier.java).
 Run the program with 3 command line arguments- location for learning file, location of testing file, kNN
 (k can be any number).
 
+(Example test file is created, you can create your own. Do not learn with pima-CFS.csv. :) )
+
 run command example - java MyClassifier pima.csv test.csv 1NN
+
 ------------------------------------------------------------------------------------------------------
 Output will contain just "yes" or "no" for each line of the test file.
 ------------------------------------------------------------------------------------------------------
-The dataset takes in different patients’ information and is primarily used to determine
+
+The dataset takes in different patientsâ€™ information and is primarily used to determine
 the presence of diabetes.
 
 There are nine attributes in total for each tuple (9 columns including weather the patient
@@ -38,6 +42,10 @@ without CFS implementation is pima.csv).
 
 The CFS method has been implemented using Weka and it has been found out the attributes with
 the highest correlation to the patient having diabetes (9th attribute) are attributes: 2,5,6,7 and 8
-(attribute names can be found above).
+(attribute names can be found above).
+
 -----------------------------------------------------------------------------------------------------
+
 The test file has multiple lines from the learning file without the last attribute.
+
+-----------------------------------------------------------------------------------------------------
