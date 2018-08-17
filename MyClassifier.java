@@ -286,6 +286,13 @@ public class MyClassifier{
 
 	public static void main(String[] args) throws Exception{
 
+		String action = args[2]; // can be knn or nb
+
+		if(action.compareTo("NB")==0){
+			
+			System.out.println("This is going to be naive bayes!");
+		}
+		
 		String location = args[0];
 
 		ArrayList<String> inputCheck = readFile(location);
@@ -298,12 +305,7 @@ public class MyClassifier{
 
 		ArrayList<values> testing = makeList(inputCheck);
 
-		String action = args[2]; // can be knn or nb
-
-
-			if(action.compareTo("NB")==0){
-			System.out.println("This is going to be naive bayes!");
-		}
+		
 		else {
 
 			Knearest working = new Knearest();
