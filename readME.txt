@@ -1,4 +1,4 @@
-This is an algorithm that implements kNN(it was supposed to implement naive bayes too but i was lazy).
+This is an algorithm that implements kNN(it was supposed to implement naive bayes too but i was lazy) from the scratch using only the default libraries. As I was only just beginning to learn code, the code in here is not optimised for general datasets, instead it only works for the specific dataset given in this repo.
 
 It learns from the learning file and tries to predict wether each patient of the testing file has diabetes.
 The output will contain a one line prediction for each line of the testing file.
